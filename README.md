@@ -9,6 +9,13 @@ M1 ISD: Algorithmique Avanc
    Présentation de la notion de flots et des algorithmes de calcul de flot
    maximal. Enfin, les thèmes des algorithmes online et approchés seront
    abordés.
+   
+ 
+MCC:
+
+Session 1 : 1/3 CC + 2/3 ET1
+
+Session 2 : 1/3CC + 2/3 ET2
 
 
 Séances de 3h:
