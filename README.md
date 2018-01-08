@@ -1,4 +1,4 @@
-M1 ISD: Algorithmique Avanc
+M1 ISD: Algorithmique Avancée
 
   1ère année - Algorithmique avancée (25h)
 
