@@ -11,8 +11,7 @@
    Présentation de la notion de flots et des algorithmes de calcul de flot
    maximal. Enfin, les thèmes des algorithmes online et approchés seront
    abordés.
-   
- 
+
 MCC:
 
 Session 1 : 1/3 CC + 2/3 ET1
@@ -27,16 +26,17 @@ Partie 1 (NT): Chemins dans un (di)graphe, structures de données de base, termi
 
 Motivation: route la plus courte entre deux stations de métro de Paris
 
-  - <2018-01-30 mar.>
-  - <2018-02-01 jeu.>
+  - <2018-01-30 mar. 09:00-12:15>
+  - <2018-02-01 jeu. 09:00-12:15>
 
-  - <2018-03-12 lun.>   // Alea
-  - <2018-03-13 mar.>
-  - <2018-03-15 jeu.>
+  - <2018-03-12 lun. 13:30-16:45>   // Alea
+  - <2018-03-13 mar. 09:00-12:15>
+  - <2018-03-15 jeu. 09:00-12:15>
 
-  - <2018-03-20 mar.>
-  - <2018-03-22 jeu.>
-  - <2018-03-27 mar.>
+  - <2018-03-20 mar. 09:00-12:15>
+  - <2018-03-22 jeu. 09:00-12:15>
+
+  - <2018-03-27 mar. 09:00-12:15>
 
 
 Tri topologique, ordonnancement simple (UET, 1 ou infinté processeurs)
