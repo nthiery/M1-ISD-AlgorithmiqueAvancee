@@ -23,8 +23,12 @@ Session 2 : 1/3CC + 2/3 ET2
 
 3h: cours/td intégré
 
-  - <2018-01-30 mar.>   // NT
-  - <2018-02-01 jeu.>   // NT
+Partie 1 (NT): Chemins dans un (di)graphe, structures de données de base, terminologie
+
+Motivation: route la plus courte entre deux stations de métro de Paris
+
+  - <2018-01-30 mar.>
+  - <2018-02-01 jeu.>
 
   - <2018-03-12 lun.>   // Alea
   - <2018-03-13 mar.>
@@ -32,3 +36,14 @@ Session 2 : 1/3CC + 2/3 ET2
 
   - <2018-03-20 mar.>
   - <2018-03-22 jeu.>
+  - <2018-03-27 mar.>
+
+
+Tri topologique, ordonnancement simple (UET, 1 ou infinté processeurs)
+
+Arbre, labyrithes, arbre couvrant de poids minimal algos Kruskal puis Prim.
+
+Réseaux: Dijkstra, flots, Ford-Fulkerson, ...
+
+
+Article de Mathieu Gay Paquet
