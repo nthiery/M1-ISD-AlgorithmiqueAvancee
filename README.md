@@ -1,4 +1,6 @@
-M1 ISD: Algorithmique Avancée
+# M1 ISD: Algorithmique Avancée
+
+## Description
 
   1ère année - Algorithmique avancée (25h)
 
@@ -10,8 +12,9 @@ M1 ISD: Algorithmique Avancée
    maximal. Enfin, les thèmes des algorithmes online et approchés seront
    abordés.
 
+## Séances
 
-Séances de 3h:
+3h: cours/td intégré
 
   - <2018-01-30 mar.>   // NT
   - <2018-02-01 jeu.>   // NT
