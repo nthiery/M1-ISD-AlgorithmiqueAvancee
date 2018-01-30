@@ -29,14 +29,14 @@ Motivation: route la plus courte entre deux stations de métro de Paris
   - <2018-01-30 mar. 09:00-12:15>
   - <2018-02-01 jeu. 09:00-12:15>
 
-  - <2018-03-12 lun. 13:30-16:45>   // Alea
-  - <2018-03-13 mar. 09:00-12:15>
-  - <2018-03-15 jeu. 09:00-12:15>
+  - <2018-03-12 lun. 13:30-16:45>   Viviane // Alea
+  - <2018-03-13 mar. 09:00-12:15>   Florent
+  - <2018-03-15 jeu. 09:00-12:15>   Viviane
 
-  - <2018-03-20 mar. 09:00-12:15>
-  - <2018-03-22 jeu. 09:00-12:15>
+  - <2018-03-20 mar. 09:00-12:15>   Florent
+  - <2018-03-22 jeu. 09:00-12:15>   Viviane
 
-  - <2018-03-27 mar. 09:00-12:15>
+  - <2018-03-27 mar. 09:00-12:15>   SLC ? Demander à Alexandre pour déplacement.
 
 
 Tri topologique, ordonnancement simple (UET, 1 ou infinté processeurs)
