@@ -1,0 +1,14 @@
+name: algo-avancee
+
+channels:
+- conda-forge
+
+dependencies:
+- notebook
+- ipywidgets
+- bqplot
+- numpy
+- pip:
+    - ordo
+    - RISE
+    - tqdm
