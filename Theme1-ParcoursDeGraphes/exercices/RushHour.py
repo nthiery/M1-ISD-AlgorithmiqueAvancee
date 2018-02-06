@@ -174,10 +174,13 @@ class Voiture:
 class Plateau:
     '''
     Un objet immutable représentant l'état d'un plateau de Rush Hour
-
     '''
     def __init__(self, voitures: Union[List, List[str],int,None]):
         '''
+        Construit un plateau à partir d'une liste de descriptions de
+        voitures, d'un nom de fichier contenant le niveau ou du numéro
+        de niveau
+
             >>> from RushHour import Plateau
             >>> plateau = Plateau(['A2R00','X2R21','C2R44','R3R52','O3D05','P3D10','Q3D13','B2D40'])
             >>> len(plateau.voitures)
@@ -226,6 +229,9 @@ class Plateau:
 
     def tableau(self) -> Tuple[str]:
         '''
+        Renvoie une représentation du plateau sous forme
+        d'une liste de chaînes de caractères
+
             >>> from RushHour import Plateau
             >>> plateau = Plateau(['A2R00','X2R21','C2R44','R3R52','O3D05','P3D10','Q3D13','B2D40'])
             >>> plateau.tableau()
@@ -280,6 +286,7 @@ class Plateau:
 
     def __hash__(self) -> int:
         '''
+        Fonction de hachage
 
             >>> from RushHour import Plateau
             >>> plateau = Plateau(['A2R00','X2R21','C2R44','R3R52','O3D05','P3D10','Q3D13','B2D40'])
@@ -545,6 +552,12 @@ class RushHour:
 
     @staticmethod
     def niveaux():
+        '''
+        Renvoie la liste des niveaux disponibles
+
+            >>> RushHour.niveaux()
+            [1, 3, 7, 8, 11, 15, 21, 38, 40]
+        '''
         niveaux = []
         for i in range(1,41):
             try:
@@ -555,8 +568,9 @@ class RushHour:
         return niveaux
 
     @staticmethod
-    def est_solution(defi, coups):
+    def est_solution(niveau, coups):
         '''
+        Teste si une liste de coup est une solution pour ce niveau
 
             >>> RushHour.est_solution(1, ['CL3', 'OD3', 'AR1', 'PU1', 'BU1', 'RL2', 'QD2', 'XR3'])
             True
@@ -574,7 +588,7 @@ class RushHour:
             >>> RushHour.est_solution(3, RushHour.solutions[1])
             False
         '''
-        plateau = Plateau(defi)
+        plateau = Plateau(niveau)
         for coup in coups:
             #print(plateau)
             plateau = plateau.deplace(coup)
@@ -584,9 +598,9 @@ class RushHour:
         return plateau.est_gagnant()
 
     @staticmethod
-    def solution(defi, return_graph=False, verbeux=False):
+    def solution(niveau, return_graph=False, verbeux=False):
         '''
-        Renvoie une solution optimale
+        Renvoie une solution optimale pour ce niveau
 
             >>> RushHour.solution(1) # doctest: +SKIP
             ['AR1', 'CL3', 'OD3', 'PU1', 'BU1', 'RL2', 'QD2', 'XR3']
