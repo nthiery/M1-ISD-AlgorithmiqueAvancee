@@ -608,7 +608,7 @@ class RushHour:
         ### BEGIN SOLUTION
         if verbeux:
             progressbar = tqdm.tqdm() # tqdm.tqdm_notebook()
-        plateau = Plateau(defi)
+        plateau = Plateau(niveau)
         afaire = deque([plateau])
         predecesseurs = {plateau: None}
         if plateau.est_gagnant():
