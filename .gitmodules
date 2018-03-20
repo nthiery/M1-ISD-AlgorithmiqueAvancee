@@ -1,0 +1,3 @@
+[submodule "Exam"]
+	path = Exam
+	url = git@github.com:nthiery/M1-ISD-AlgorithmiqueAvancee-prive.git
