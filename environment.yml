@@ -6,6 +6,7 @@ channels:
 dependencies:
 - notebook
 - ipywidgets
+- nbgrader
 - bqplot
 - numpy
 - pip:
