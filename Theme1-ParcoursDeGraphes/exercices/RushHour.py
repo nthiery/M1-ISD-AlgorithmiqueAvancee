@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from typing import List, Tuple, Union
 from collections import deque
 import tqdm
@@ -101,6 +102,11 @@ class Voiture:
             >>> voiture = Voiture('O3R32')
             >>> voiture.case_devant()
             array([3, 5])
+
+            >>> from RushHour import Voiture
+            >>> voiture = Voiture('O3L32')
+            >>> voiture.case_devant()
+            array([ 3, -1])
         '''
         return self.position + self.direction * self.longueur
 
@@ -110,13 +116,13 @@ class Voiture:
 
             >>> from RushHour import Voiture
             >>> voiture = Voiture('O3R32')
-            >>> voiture.case_devant()
-            array([3, 5])
+            >>> voiture.case_derriere()
+            array([3, 1])
 
             >>> from RushHour import Voiture
             >>> voiture = Voiture('O3L32')
-            >>> voiture.case_devant()
-            array([ 3, -1])
+            >>> voiture.case_derriere()
+            array([3, 3])
         '''
         return self.position - self.direction
 
@@ -609,12 +615,13 @@ class RushHour:
         if verbeux:
             progressbar = tqdm.tqdm() # tqdm.tqdm_notebook()
         plateau = Plateau(niveau)
-        afaire = deque([plateau])
+        afaire = deque([(plateau, 0)])
         predecesseurs = {plateau: None}
         if plateau.est_gagnant():
             return []
+        olddist = 0
         while afaire:
-            sommet = afaire.popleft()
+            sommet, dist = afaire.popleft()
             for label, voisin in sommet.voisins().items():
                 if voisin in predecesseurs:
                     continue
@@ -622,7 +629,7 @@ class RushHour:
                     progressbar.update()
                     progressbar.set_postfix({'afaire': len(afaire)})
                 predecesseurs[voisin] = label, sommet
-                afaire.append(voisin)
+                afaire.append((voisin, dist+1))
                 if voisin.est_gagnant():
                     if return_graph:
                         return predecesseurs
@@ -633,7 +640,10 @@ class RushHour:
                         chemin.append(label)
                     chemin.reverse()
                     return chemin
-        if return_grpah:
+            if dist != olddist:
+                print(dist)
+                olddist = dist
+        if return_graph:
             return predecesseurs
         return None
         ### END SOLUTION
