@@ -1,5 +1,7 @@
 # M1 ISD: Algorithmique Avancée
 
+This repository was moved to: https://gitlab.u-psud.fr/M1-ISD/AlgorithmiqueAvancee/Instructors
+
 ## Description
 
   1ère année - Algorithmique avancée (25h)
